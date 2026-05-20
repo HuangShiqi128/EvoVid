@@ -3,236 +3,104 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <!-- Primary Meta Tags -->
-  <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
-  <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
-  <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+  <meta name="title" content="EvoVid: Temporal-Centric Self-Evolution for Video Large Language Models">
+  <meta name="description" content="EvoVid is a temporal-centric self-evolving framework that lets Video-LLMs improve directly from raw, unannotated videos via a temporal-aware Questioner and a temporal-grounded Solver.">
+  <meta name="keywords" content="Video-LLM, self-evolving, reinforcement learning, temporal reasoning, GRPO, video understanding, multimodal, machine learning">
+  <meta name="author" content="Shiqi Huang, Ziyue Wang, Zhongrong Zuo, Han Qiu, Qi She, Bihan Wen">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
-  
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
-  <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
-  <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
-  <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
-  <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
+  <meta property="og:site_name" content="Nanyang Technological University · ByteDance">
+  <meta property="og:title" content="EvoVid: Temporal-Centric Self-Evolution for Video Large Language Models">
+  <meta property="og:description" content="A temporal-centric self-evolving framework that lets Video-LLMs improve directly from raw, unannotated videos.">
+  <meta property="og:image" content="static/images/teaser.png">
+  <meta property="og:image:alt" content="EvoVid teaser figure">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
-  <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Same as social preview image above -->
-  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta name="twitter:title" content="EvoVid: Temporal-Centric Self-Evolution for Video Large Language Models">
+  <meta name="twitter:description" content="A temporal-centric self-evolving framework that lets Video-LLMs improve directly from raw, unannotated videos.">
+  <meta name="twitter:image" content="static/images/teaser.png">
 
   <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
-  
-  <!-- Additional SEO -->
+  <meta name="citation_title" content="EvoVid: Temporal-Centric Self-Evolution for Video Large Language Models">
+  <meta name="citation_author" content="Huang, Shiqi">
+  <meta name="citation_author" content="Wang, Ziyue">
+  <meta name="citation_author" content="Zuo, Zhongrong">
+  <meta name="citation_author" content="Qiu, Han">
+  <meta name="citation_author" content="She, Qi">
+  <meta name="citation_author" content="Wen, Bihan">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_pdf_url" content="static/pdfs/evovid_paper.pdf">
+
   <meta name="theme-color" content="#2563eb">
-  <meta name="msapplication-TileColor" content="#2563eb">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  
-  <!-- Preconnect for performance -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://ajax.googleapis.com">
-  <link rel="preconnect" href="https://documentcloud.adobe.com">
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
+  <title>EvoVid: Temporal-Centric Self-Evolution for Video Large Language Models</title>
 
-  <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
-  
-  <!-- Favicon and App Icons -->
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link rel="apple-touch-icon" href="static/images/favicon.ico">
-  
-  <!-- Critical CSS - Load synchronously -->
+  <link rel="icon" type="image/png" href="static/images/favicon.png">
+  <link rel="apple-touch-icon" href="static/images/favicon.png">
+
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-  
-  <!-- Non-critical CSS - Load asynchronously -->
+
   <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
-  <!-- Fallback for browsers that don't support preload -->
+
   <noscript>
     <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
     <link rel="stylesheet" href="static/css/bulma-slider.min.css">
     <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   </noscript>
-  
-  <!-- Fonts - Optimized loading -->
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Defer non-critical JavaScript -->
+
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
   <script defer src="static/js/bulma-carousel.min.js"></script>
   <script defer src="static/js/bulma-slider.min.js"></script>
   <script defer src="static/js/index.js"></script>
-  
-  <!-- Structured Data for Academic Papers -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
-    "author": [
-      {
-        "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      }
-    ],
-    "datePublished": "2024-01-01",
-    "publisher": {
-      "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
-    },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
-    "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "mainEntity": {
-      "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
-    },
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
-      },
-      {
-        "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
-      }
-    ]
-  }
-  </script>
-  
-  <!-- Website/Organization Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
-    "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
-    ]
-  }
-  </script>
+
+  <style>
+    .gradient-evovid {
+      background: linear-gradient(90deg, #f59e0b 0%, #f97316 25%, #60a5fa 70%, #3b82f6 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+    }
+    .author-affil { color:#4a4a4a; }
+    .tldr-box {
+      background:#f5f7ff; border-left:4px solid #2563eb; border-radius:8px;
+      padding:1.1rem 1.4rem; margin-top:1.2rem; text-align:left;
+    }
+    .contrib-list { text-align:left; }
+    .contrib-list li { margin-bottom:0.6rem; }
+    .fig-caption { color:#5a5a5a; font-size:0.95rem; margin-top:0.6rem; }
+    .results-table { font-size:0.9rem; }
+    .results-table td, .results-table th { text-align:center; vertical-align:middle; }
+    .results-table th:first-child, .results-table td:first-child { text-align:left; }
+    .best { font-weight:700; }
+    .grouprow td { background:#eef2ff !important; font-weight:600; text-align:left !important; }
+    .imp { color:#2563eb; font-size:0.7em; margin-left:1px; font-weight:600; }
+    .figrow img { background:#fff; border:1px solid #eee; border-radius:8px; }
+  </style>
 </head>
 <body>
 
-
-  <!-- Scroll to Top Button -->
   <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
     <i class="fas fa-chevron-up"></i>
   </button>
-
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
 
   <main id="main-content">
   <section class="hero">
@@ -240,281 +108,298 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title"><span class="gradient-evovid">EvoVid</span>:<br>Temporal-Centric Self-Evolution for Video Large Language Models</h1>
             <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+              <span class="author-block">Shiqi Huang<sup>1</sup>,</span>
+              <span class="author-block">Ziyue Wang<sup>2</sup>,</span>
+              <span class="author-block">Zhongrong Zuo<sup>2</sup>,</span>
+              <span class="author-block">Han Qiu<sup>1,2</sup>,</span>
+              <span class="author-block">Qi She<sup>2</sup>,</span>
+              <span class="author-block">Bihan Wen<sup>1</sup><sup>*</sup></span>
+            </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block author-affil"><sup>1</sup>School of Electrical and Electronic Engineering, Nanyang Technological University</span><br>
+              <span class="author-block author-affil"><sup>2</sup>ByteDance</span>
+              <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding Author</small></span>
+            </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- TODO: Replace with your GitHub repository URL -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="static/pdfs/evovid_paper.pdf" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>Paper</span>
+                </a>
                 </span>
 
-                <!-- TODO: Update with your arXiv paper ID -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="https://arxiv.org/abs/" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
+                  <span class="icon"><i class="ai ai-arxiv"></i></span>
                   <span>arXiv</span>
                 </a>
-              </span>
+                </span>
+
+                <span class="link-block">
+                  <a href="https://github.com/" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>Code</span>
+                </a>
+                </span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
-<!-- Teaser video-->
+<!-- Teaser -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
+      <img src="static/images/framework.png" alt="EvoVid framework" style="width:100%;"/>
+      <div class="fig-caption has-text-centered">
+        <strong>Overview of EvoVid.</strong> Questioner&nbsp;<i>&pi;<sub>Q</sub></i>
+        and Solver&nbsp;<i>&pi;<sub>S</sub></i> co-evolve through two temporal-centric rewards.
+      </div>
     </div>
   </div>
 </section>
-<!-- End teaser video -->
+<!-- End teaser -->
 
-<!-- Paper abstract -->
+<!-- Abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Recent Video Large Language Models (Video-LLMs) have demonstrated strong capabilities in video reasoning
+            through reinforcement learning (RL). However, existing RL pipelines rely heavily on human-annotated tasks
+            and solutions, making them costly to scale and fundamentally constrained by human expertise. Self-evolving
+            frameworks have recently emerged as a promising alternative through autonomous Questioner–Solver self-play.
+            Unfortunately, these approaches are primarily designed for static modalities such as text and images,
+            fundamentally failing to capture the temporal dynamics that are central to video reasoning. In this work,
+            we propose <strong>EvoVid</strong>, a temporal-centric self-evolving framework that enables Video-LLMs to
+            improve directly from raw, unannotated videos. Specifically, we introduce two complementary temporal-centric
+            rewards: a <strong>temporal-aware Questioner</strong> reward that encourages temporally dependent question
+            generation through temporal perturbation sensitivity, and a <strong>temporal-grounded Solver</strong> reward
+            that provides automatic temporal supervision via inherent video segment localization. Extensive experiments
+            across four base models and six benchmarks demonstrate consistent improvements over both base models and
+            existing self-evolving baselines, achieving competitive performance with supervised methods. These results
+            highlight temporal-centric self-evolution as an effective and scalable paradigm for video understanding and reasoning.
           </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End paper abstract -->
+<!-- End abstract -->
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
+<!-- Contributions -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 has-text-centered">Contributions</h2>
+        <div class="content">
+          <ul class="contrib-list">
+            <li><strong>First self-evolving framework for Video-LLMs.</strong> EvoVid improves video understanding and
+              reasoning directly from raw, unannotated videos, without relying on any human supervision.</li>
+            <li><strong>Two temporal-centric verifiable rewards.</strong> A temporal-aware Questioner reward that
+              preserves temporal perturbation sensitivity, and a temporal-grounded Solver reward that leverages inherent
+              temporal segment supervision.</li>
+            <li><strong>Extensive validation.</strong> Across four MLLMs and six video understanding and reasoning
+              benchmarks, EvoVid delivers consistent gains, validating the effectiveness of video-based self-evolution.</li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
+<!-- End contributions -->
 
+<!-- Method --
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Method</h2>
+    <div class="figrow has-text-centered">
+      <img src="static/images/framework.png" alt="Overview of EvoVid" style="width:100%;"/>
+      <p class="fig-caption has-text-centered">
+        <strong>Overview of EvoVid.</strong> A single base model alternates between a Questioner&nbsp;<i>&pi;<sub>Q</sub></i>
+        and a Solver&nbsp;<i>&pi;<sub>S</sub></i> that co-evolve through two temporal-centric rewards, optimized with GRPO.
+      </p>
+    </div>
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
+    <div class="columns is-centered" style="margin-top:1.5rem;">
+      <div class="column is-half">
+        <div class="content has-text-justified">
+          <h3 class="title is-5">Temporal-aware Questioner</h3>
+          <p>
+            A meaningful video question should depend on the correct temporal ordering of frames. EvoVid compares the
+            Solver's confidence on the original video against a temporally <em>perturbed</em> (frame-shuffled) version,
+            and rewards questions whose answers degrade under perturbation:
+            <i>r<sup>Q</sup><sub>temp</sub> = max(0, s(v,q) &minus; s(ṽ,q))</i>.
+            This turns temporal sensitivity into a label-free, verifiable signal that drives the Questioner toward
+            temporally intensive queries.
+          </p>
         </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
+      </div>
+      <div class="column is-half">
+        <div class="content has-text-justified">
+          <h3 class="title is-5">Temporal-grounded Solver</h3>
+          <p>
+            During question generation, each video is sampled as a contiguous <i>K</i>-frame window that naturally defines
+            a pseudo ground-truth temporal segment. The Solver predicts both the answer and a temporal segment
+            <code>&lt;segment&gt;t<sub>s</sub>-t<sub>e</sub>&lt;/segment&gt;</code>, and is rewarded by its
+            Intersection-over-Union with the sampled window: <i>r<sup>S</sup><sub>temp</sub> = IoU(Ŵ, W)</i>.
+            This yields temporally grounded reasoning without any manually annotated timestamps.
+          </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
+!-- End method -->
 
+<!-- Results -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Main Results</h2>
+    <div class="content has-text-justified">
+      <p>
+        Across four MLLMs (Qwen2.5-VL-3B/7B and Qwen3-VL-4B/8B) and six video reasoning and general benchmarks, three
+        iterations of EvoVid co-evolution yield consistent improvements over each base model—despite using no
+        human-curated questions or annotations. The model progressively improves through a fully autonomous learning
+        process, with the largest gains on temporally challenging benchmarks (e.g., +19.3% TempCompass on Qwen2.5-VL-3B).
+      </p>
+    </div>
 
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <p class="fig-caption has-text-centered" style="margin-bottom:0.6rem;">
+          <strong>Performance on video reasoning and general benchmarks across four MLLMs.</strong> For each base model we
+          compare the untrained <em>Base Model</em>, the frozen-Questioner baseline, and three iterations of EvoVid
+          co-evolution. <span class="best">Bold</span> marks the best result per model; blue superscripts on the Iter-3
+          row report the absolute improvement over the corresponding base model.
+        </p>
+        <div class="table-container">
+        <table class="table is-striped is-hoverable is-fullwidth results-table">
+          <thead>
+            <tr>
+              <th>Methods</th>
+              <th>Video-Holmes</th><th>VSI-Bench</th><th>VideoMMMU</th><th>MMVU</th>
+              <th>TempCompass</th><th>VideoMME</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="grouprow"><td colspan="7"><em>Qwen2.5-VL-3B-Instruct</em></td></tr>
+            <tr><td>Base Model (w/o training)</td><td>26.8</td><td>25.1</td><td>30.6</td><td>48.5</td><td>28.9</td><td>48.0</td></tr>
+            <tr><td>EvoVid (<i class="fas fa-snowflake" style="color:#9fdbe8;"></i> Questioner)</td><td>27.8</td><td>26.3</td><td>35.0</td><td>53.3</td><td>34.5</td><td>48.3</td></tr>
+            <tr><td>EvoVid (Iter 1)</td><td class="best">28.0</td><td>29.5</td><td>34.4</td><td>51.7</td><td>33.2</td><td>47.0</td></tr>
+            <tr><td>EvoVid (Iter 2)</td><td>26.9</td><td>28.4</td><td class="best">36.9</td><td>53.1</td><td>46.3</td><td class="best">48.9</td></tr>
+            <tr><td><strong>EvoVid (Iter 3)</strong></td><td>27.2<sup class="imp">+0.4</sup></td><td class="best">29.5<sup class="imp">+4.4</sup></td><td>36.7<sup class="imp">+6.1</sup></td><td class="best">54.6<sup class="imp">+6.1</sup></td><td class="best">48.2<sup class="imp">+19.3</sup></td><td>48.6<sup class="imp">+0.6</sup></td></tr>
 
+            <tr class="grouprow"><td colspan="7"><em>Qwen2.5-VL-7B-Instruct</em></td></tr>
+            <tr><td>Base Model (w/o training)</td><td>27.8</td><td>27.7</td><td>47.8</td><td>59.2</td><td>72.2</td><td>53.1</td></tr>
+            <tr><td>EvoVid (<i class="fas fa-snowflake" style="color:#9fdbe8;"></i> Questioner)</td><td>28.4</td><td>29.3</td><td>46.6</td><td>60.5</td><td>72.5</td><td>51.5</td></tr>
+            <tr><td>EvoVid (Iter 1)</td><td>28.6</td><td>28.5</td><td>48.9</td><td>60.6</td><td>72.1</td><td>51.4</td></tr>
+            <tr><td>EvoVid (Iter 2)</td><td class="best">29.9</td><td>30.9</td><td>48.3</td><td>60.5</td><td>73.1</td><td class="best">53.8</td></tr>
+            <tr><td><strong>EvoVid (Iter 3)</strong></td><td>29.3<sup class="imp">+1.5</sup></td><td class="best">31.7<sup class="imp">+4.0</sup></td><td class="best">50.0<sup class="imp">+2.2</sup></td><td class="best">62.4<sup class="imp">+3.2</sup></td><td class="best">73.2<sup class="imp">+1.0</sup></td><td>53.6<sup class="imp">+0.5</sup></td></tr>
 
+            <tr class="grouprow"><td colspan="7"><em>Qwen3-VL-4B-Instruct</em></td></tr>
+            <tr><td>Base Model (w/o training)</td><td>29.9</td><td>40.1</td><td>46.7</td><td>60.3</td><td>70.9</td><td>49.6</td></tr>
+            <tr><td>EvoVid (<i class="fas fa-snowflake" style="color:#9fdbe8;"></i> Questioner)</td><td>30.7</td><td>40.6</td><td>45.1</td><td>61.1</td><td>70.6</td><td>49.6</td></tr>
+            <tr><td>EvoVid (Iter 1)</td><td>30.4</td><td>41.4</td><td>47.3</td><td>61.0</td><td>70.8</td><td>49.7</td></tr>
+            <tr><td>EvoVid (Iter 2)</td><td>29.1</td><td class="best">43.1</td><td>47.3</td><td>62.4</td><td>70.9</td><td>49.7</td></tr>
+            <tr><td><strong>EvoVid (Iter 3)</strong></td><td class="best">31.1<sup class="imp">+1.2</sup></td><td>42.8<sup class="imp">+2.7</sup></td><td class="best">47.6<sup class="imp">+0.9</sup></td><td class="best">62.6<sup class="imp">+2.3</sup></td><td class="best">71.7<sup class="imp">+0.8</sup></td><td class="best">51.4<sup class="imp">+1.8</sup></td></tr>
 
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
+            <tr class="grouprow"><td colspan="7"><em>Qwen3-VL-8B-Instruct</em></td></tr>
+            <tr><td>Base Model (w/o training)</td><td>36.2</td><td>37.4</td><td>46.8</td><td>64.8</td><td>73.6</td><td>50.3</td></tr>
+            <tr><td>EvoVid (<i class="fas fa-snowflake" style="color:#9fdbe8;"></i> Questioner)</td><td>36.3</td><td>35.3</td><td>47.8</td><td>63.7</td><td>73.4</td><td>50.4</td></tr>
+            <tr><td>EvoVid (Iter 1)</td><td>36.0</td><td>38.0</td><td>49.0</td><td>63.8</td><td>74.3</td><td>50.3</td></tr>
+            <tr><td>EvoVid (Iter 2)</td><td>35.2</td><td>38.3</td><td>48.1</td><td class="best">67.0</td><td>73.7</td><td class="best">51.4</td></tr>
+            <tr><td><strong>EvoVid (Iter 3)</strong></td><td class="best">36.6<sup class="imp">+0.4</sup></td><td class="best">39.8<sup class="imp">+2.4</sup></td><td class="best">49.1<sup class="imp">+2.3</sup></td><td>66.2<sup class="imp">+1.4</sup></td><td class="best">74.3<sup class="imp">+0.7</sup></td><td>51.2<sup class="imp">+0.9</sup></td></tr>
+          </tbody>
+        </table>
+        </div>
       </div>
     </div>
-  </section>
-<!--End paper poster -->
+</section>
+<!-- End results -->
 
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <div class="bibtex-header">
-        <h2 class="title">BibTeX</h2>
-        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-          <i class="fas fa-copy"></i>
-          <span class="copy-text">Copy</span>
-        </button>
+<!-- Analysis / Ablations (commented out)
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Analysis &amp; Ablations</h2>
+    <div class="columns is-centered figrow">
+      <div class="column is-half has-text-centered">
+        <img src="static/images/questioner.png" alt="Shuffle strategy in Questioner reward" style="max-width:100%;"/>
+        <p class="fig-caption has-text-centered"><strong>Shuffle strategy (Questioner).</strong> All temporal-perturbation
+          strategies beat the no-shuffle baseline; random shuffle provides the strongest temporal contrastive signal.</p>
       </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
+      <div class="column is-half has-text-centered">
+        <img src="static/images/solver.png" alt="Window size in Solver reward" style="max-width:100%;"/>
+        <p class="fig-caption has-text-centered"><strong>Window size (Solver).</strong> Performance is stable for moderate
+          windows; we use <i>K</i>&nbsp;=&nbsp;8 by default. Gains come from informative segment supervision, not the
+          presence of a segment tag.</p>
+      </div>
+    </div>
+
+    <div class="columns is-centered figrow" style="margin-top:1rem;">
+      <div class="column is-two-thirds has-text-centered">
+        <img src="static/images/wordcloud.png" alt="Word distribution of generated questions" style="max-width:100%;"/>
+        <p class="fig-caption has-text-centered"><strong>Qualitative analysis.</strong> Compared with the Vanilla baseline,
+          the temporal-aware Questioner produces substantially richer temporal and reasoning vocabulary—words like
+          <em>change</em>, <em>reason</em>, <em>interaction</em>, and <em>frame</em> appear far more frequently.</p>
+      </div>
+    </div>
+  </div>
+</section>
+End analysis -->
+
+<!-- BibTeX citation --
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <div class="bibtex-header">
+      <h2 class="title">BibTeX</h2>
+      <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+        <i class="fas fa-copy"></i>
+        <span class="copy-text">Copy</span>
+      </button>
+    </div>
+    <pre id="bibtex-code"><code>@article{huang2026evovid,
+  title={EvoVid: Temporal-Centric Self-Evolution for Video Large Language Models},
+  author={Huang, Shiqi and Wang, Ziyue and Zuo, Zhongrong and Qiu, Han and She, Qi and Wen, Bihan},
+  journal={arXiv preprint},
+  year={2026}
 }</code></pre>
-    </div>
+  </div>
 </section>
-<!--End BibTex citation -->
-
+<!-- End BibTeX citation -->
 
   <footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
-
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            <br> This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
-
         </div>
       </div>
     </div>
   </div>
 </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
+  </main>
   </body>
   </html>
